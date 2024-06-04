@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lærerens Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Velkommen, Lærer</h1>
+    <div id="class-container">
+        <h2>Dine Klasser</h2>
+        <div id="classes"></div>
+        <button id="create-class">Opret Ny Klasse</button>
+    </div>
+    <div id="task-container" style="display: none;">
+        <h2>Tildel Opgaver</h2>
+        <select id="task-type">
+            <option value="procent">Procent Regning</option>
+            <option value="decimal">Decimal Tal</option>
+            <option value="plus">Plus</option>
+            <option value="minus">Minus</option>
+            <option value="multiply">Gange</option>
+            <option value="divide">Division</option>
+            <option value="mixed">Blandet</option>
+        </select>
+        <input type="number" id="difficulty" placeholder="Sværhedsgrad" min="1" max="10">
+        <button id="assign-task">Tildel Opgave</button>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
